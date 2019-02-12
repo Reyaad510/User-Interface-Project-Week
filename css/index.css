@@ -140,14 +140,20 @@ table {
 html {
   font-size: 62.5%;
 }
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
 p {
   font-size: 1.4rem;
 }
 li {
   font-size: 1.6rem;
 }
-.menu-button {
-  cursor: pointer;
+nav {
+  display: none;
 }
 header {
   display: flex;
@@ -163,4 +169,7 @@ header h1 {
 }
 header .hamburger {
   margin-right: 40px;
+}
+header .hamburger .menu-button {
+  cursor: pointer;
 }
