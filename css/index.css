@@ -173,3 +173,18 @@ header .hamburger {
 header .hamburger .menu-button {
   cursor: pointer;
 }
+.top {
+  position: relative;
+}
+.top img {
+  width: 100%;
+  display: block;
+}
+.top h2 {
+  font-size: 5.4rem;
+  position: absolute;
+  bottom: 10%;
+  left: 6%;
+  color: white;
+  line-height: 1.2;
+}
