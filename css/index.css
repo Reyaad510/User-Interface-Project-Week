@@ -140,17 +140,27 @@ table {
 html {
   font-size: 62.5%;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 h2 {
   font-size: 2rem;
 }
 h3 {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 p {
   font-size: 1.4rem;
+  line-height: 1.3;
 }
 li {
   font-size: 1.6rem;
+}
+img {
+  width: 100%;
 }
 nav {
   display: none;
@@ -187,4 +197,36 @@ header .hamburger .menu-button {
   left: 6%;
   color: white;
   line-height: 1.2;
+}
+.main {
+  margin-top: 50px;
+  border: 1px solid black;
+}
+.main .middle {
+  display: flex;
+}
+.main .middle .midText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.main .middle .midText p {
+  margin-top: 20px;
+}
+.main .middle .midText .learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 20px;
+  background: white;
+  cursor: pointer;
+  width: 40%;
+}
+.main .middle .midImg {
+  flex: 1;
 }

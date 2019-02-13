@@ -23,6 +23,10 @@ header {
     }
 }
 
+
+
+// Home Page Content
+
 .top {
     position: relative;
 
@@ -40,4 +44,51 @@ header {
       line-height: 1.2;  
   }
 
+}
+
+
+
+
+// Main Content
+
+.main {
+    margin-top: 50px;
+    border: 1px solid black;
+    .middle {
+        display: flex;
+    
+        
+        
+
+        .midText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            
+            
+                p {
+                    margin-top: 20px;
+                }
+                .learn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                    font-size: 1.4rem;
+                    border-radius: 3px;
+                    height: 30px;
+                    margin-top: 20px;
+                    background: white;
+                    cursor: pointer;
+                    width: 40%;
+                }
+              
+        }
+        .midImg {
+            flex: 1;
+            
+            
+        }
+    }
 }
