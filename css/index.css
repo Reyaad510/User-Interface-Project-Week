@@ -145,6 +145,11 @@ html {
   margin: 0 auto;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 h2 {
   font-size: 2.2rem;
 }
@@ -165,9 +170,27 @@ li {
 img {
   width: 100%;
 }
+nav {
+  display: none;
+}
 .footer {
   background: #828282;
   color: white;
+  padding-top: 60px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .newYork p,
+.footer .florida p,
+.footer .cali p {
+  line-height: 1.5;
+}
+input[type=email] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 40%;
 }
 #copyright {
   text-align: center;
@@ -177,8 +200,8 @@ img {
 span {
   font-weight: bold;
 }
-nav {
-  display: none;
+.small {
+  font-size: 1.2rem;
 }
 header {
   display: flex;
@@ -207,11 +230,17 @@ header .hamburger .menu-button {
 }
 .top h2 {
   font-size: 7rem;
+  font-weight: bold;
   position: absolute;
   bottom: 10%;
   left: 10%;
   color: white;
   line-height: 1.2;
+}
+@media (max-width: 500px) {
+  .top h2 {
+    font-size: 4rem;
+  }
 }
 .main {
   margin-top: 50px;
@@ -219,12 +248,28 @@ header .hamburger .menu-button {
 .main .middle {
   display: flex;
 }
+@media (max-width: 500px) {
+  .main .middle {
+    flex-direction: column-reverse;
+  }
+}
 .main .middle .midText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
   margin-left: 5%;
+}
+@media (max-width: 500px) {
+  .main .middle .midText {
+    margin-top: 30px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .main .middle .midText h3 {
+    font-size: 3.4rem;
+  }
 }
 .main .middle .midText p {
   margin-top: 20px;
@@ -242,11 +287,23 @@ header .hamburger .menu-button {
   cursor: pointer;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .main .middle .midText .learn {
+    width: 100%;
+    padding: 30px;
+    font-size: 1.8rem;
+  }
+}
 .main .middle .midImg {
   flex: 1;
 }
 .main .middle2 {
   margin-top: 100px;
+}
+@media (max-width: 500px) {
+  .main .middle2 {
+    flex-direction: column;
+  }
 }
 .projects {
   margin-top: 80px;
@@ -304,24 +361,4 @@ header .hamburger .menu-button {
 }
 .second {
   margin-top: 40px;
-}
-.small {
-  font-size: 1.2rem;
-}
-.footer {
-  padding-top: 60px;
-}
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-}
-.footer .newYork p,
-.footer .florida p,
-.footer .cali p {
-  line-height: 1.5;
-}
-input[type=email] {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 40%;
 }

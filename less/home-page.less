@@ -37,14 +37,23 @@ header {
 
   h2 {
       font-size: 7.0rem;
+      font-weight: bold;
       position: absolute;
       bottom: 10%;
       left: 10%; 
       color: white;   
-      line-height: 1.2;  
+      line-height: 1.2; 
+      
+      @media @mobile {
+          font-size: 4.0rem;
+      }
+      
+      }
+
+     
   }
 
-}
+
 
 
 
@@ -56,7 +65,11 @@ header {
    
     .middle {
         display: flex;
-    
+        
+        @media @mobile {
+            flex-direction: column-reverse;
+          
+        }
         
         
 
@@ -66,8 +79,17 @@ header {
             justify-content: center;
             flex: 1;
             margin-left: 5%;
+
+            @media @mobile {
+                margin-top: 30px;
+                align-items: flex-start;
+            }
             
-            
+                h3 {
+                    @media @mobile {
+                        font-size: 3.4rem;
+                    }
+                }
                 p {
                     margin-top: 20px;
                     
@@ -84,6 +106,12 @@ header {
                     background: white;
                     cursor: pointer;
                     width: 40%;
+
+                    @media @mobile {
+                        width: 100%;
+                        padding: 30px;
+                        font-size: 1.8rem;
+                    }
                 }
               
         }
@@ -95,6 +123,10 @@ header {
     }
     .middle2 {
          margin-top: 100px;
+
+         @media @mobile {
+             flex-direction: column;
+         }
     }
 }
 
@@ -178,29 +210,4 @@ header {
 
 
 
-// Footer Section
 
-.small {
-    font-size: 1.2rem;
-}
-
-.footer {
-    padding-top: 60px;
-    .container {
-        display: flex;
-        justify-content: space-between;
-        }
-
-
-        .newYork, .florida, .cali {
-            p {
-                line-height: 1.5;
-            }
-        }
-    }
-
-    input[type=email] {
-        padding-top: 7px;
-        padding-bottom: 7px;
-        padding-right: 40%;
-    }
