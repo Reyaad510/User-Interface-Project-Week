@@ -254,11 +254,39 @@ header .hamburger .menu-button {
   right: 0.1%;
   top: 80%;
 }
+.projects .outskirts {
+  position: relative;
+}
+.projects .outskirts img {
+  width: 100%;
+  display: block;
+}
+.projects .outskirts h4 {
+  position: absolute;
+  background: #D8D8D8;
+  padding: 3% 10%;
+  left: 0.01%;
+  top: 80%;
+}
+.projects .blocks {
+  position: relative;
+}
+.projects .blocks img {
+  width: 100%;
+  display: block;
+}
+.projects .blocks h4 {
+  position: absolute;
+  background: #D8D8D8;
+  padding: 3% 10%;
+  right: 0.1%;
+  top: 80%;
+}
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 45%;
   margin: 80px auto;
 }
