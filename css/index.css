@@ -191,10 +191,10 @@ header .hamburger .menu-button {
   display: block;
 }
 .top h2 {
-  font-size: 5.4rem;
+  font-size: 7rem;
   position: absolute;
   bottom: 10%;
-  left: 6%;
+  left: 10%;
   color: white;
   line-height: 1.2;
 }
@@ -210,6 +210,7 @@ header .hamburger .menu-button {
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  margin-left: 5%;
 }
 .main .middle .midText p {
   margin-top: 20px;
@@ -229,4 +230,7 @@ header .hamburger .menu-button {
 }
 .main .middle .midImg {
   flex: 1;
+}
+.main .middle2 {
+  margin-top: 100px;
 }
