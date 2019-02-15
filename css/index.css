@@ -308,13 +308,29 @@ header .hamburger .menu-button {
 .projects {
   margin-top: 80px;
 }
+.projects h3 {
+  font-size: 3rem;
+}
 .projects .villas {
   position: relative;
   padding-top: 40px;
 }
-.projects .villas img {
+.projects .villas .imgDesktop {
   width: 100%;
   display: block;
+}
+@media (max-width: 500px) {
+  .projects .villas .imgDesktop {
+    display: none;
+  }
+}
+.projects .villas .imgMobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .projects .villas .imgMobile {
+    display: block;
+  }
 }
 .projects .villas h4 {
   position: absolute;
@@ -323,12 +339,34 @@ header .hamburger .menu-button {
   right: 0.1%;
   top: 80%;
 }
+@media (max-width: 500px) {
+  .projects .villas h4 {
+    right: 5%;
+    top: 95%;
+    padding: 8% 18%;
+    font-size: 2.5rem;
+    letter-spacing: 7px;
+  }
+}
 .projects .outskirts {
   position: relative;
 }
-.projects .outskirts img {
+.projects .outskirts .imgDesktop {
   width: 100%;
   display: block;
+}
+@media (max-width: 500px) {
+  .projects .outskirts .imgDesktop {
+    display: none;
+  }
+}
+.projects .outskirts .imgMobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .projects .outskirts .imgMobile {
+    display: block;
+  }
 }
 .projects .outskirts h4 {
   position: absolute;
@@ -337,12 +375,34 @@ header .hamburger .menu-button {
   left: 0.01%;
   top: 80%;
 }
+@media (max-width: 500px) {
+  .projects .outskirts h4 {
+    left: 9%;
+    top: 95%;
+    padding: 8% 18%;
+    font-size: 2.5rem;
+    letter-spacing: 7px;
+  }
+}
 .projects .blocks {
   position: relative;
 }
-.projects .blocks img {
+.projects .blocks .imgDesktop {
   width: 100%;
   display: block;
+}
+@media (max-width: 500px) {
+  .projects .blocks .imgDesktop {
+    display: none;
+  }
+}
+.projects .blocks .imgMobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .projects .blocks .imgMobile {
+    display: block;
+  }
 }
 .projects .blocks h4 {
   position: absolute;
@@ -351,6 +411,15 @@ header .hamburger .menu-button {
   right: 0.1%;
   top: 80%;
 }
+@media (max-width: 500px) {
+  .projects .blocks h4 {
+    right: 5%;
+    top: 95%;
+    padding: 8% 18%;
+    font-size: 2.5rem;
+    letter-spacing: 7px;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -358,6 +427,12 @@ header .hamburger .menu-button {
   align-items: center;
   width: 40%;
   margin: 80px auto;
+}
+@media (max-width: 500px) {
+  .content {
+    width: 100%;
+    margin: 100px auto;
+  }
 }
 .second {
   margin-top: 40px;

@@ -139,31 +139,72 @@ header {
 .projects {
 
     margin-top: 80px;
+
+    h3 {
+        font-size: 3.0rem;
+    }
+    
     .villas {
        position: relative;
        padding-top: 40px;
 
-       img {
+       .imgDesktop {
            width: 100%;
            display: block;
+           
+           @media @mobile {
+               display: none;
+           }
        }
 
+       .imgMobile {
+        display: none;
+        
+        @media @mobile {
+            display: block;
+        }
+     }
+
+       
         h4 {
             position: absolute;
             background: #D8D8D8;
             padding: 3% 10%;
             right: 0.1%;
             top: 80%;
+
+            @media @mobile {
+                right: 5%;
+                top: 95%;
+                padding: 8% 18%;
+                font-size: 2.5rem;
+                letter-spacing: 7px;
+            }
             
         }
     }
     .outskirts {
         position: relative;
 
-        img {
+        .imgDesktop {
             width: 100%;
             display: block;
+
+            @media @mobile {
+                display: none;
+            }
+            
         }
+
+        .imgMobile {
+            display: none;
+            
+            @media @mobile {
+                display: block;
+            }
+         }
+
+         
  
          h4 {
              position: absolute;
@@ -171,16 +212,38 @@ header {
              padding: 3% 10%;
              left: 0.01%;
              top: 80%;
+
+             @media @mobile {
+                left: 9%;
+                top: 95%;
+                padding: 8% 18%;
+                font-size: 2.5rem;
+                letter-spacing: 7px;
+            }
              
          }
     }
 
     .blocks {
         position: relative;
-        img {
+
+        .imgDesktop {
             width: 100%;
             display: block;
+
+            @media @mobile {
+                display: none;
+            }
         }
+
+        .imgMobile {
+            display: none;
+
+            @media @mobile {
+                display: block;
+            }
+        }
+
  
          h4 {
              position: absolute;
@@ -188,6 +251,14 @@ header {
              padding: 3% 10%;
              right: 0.1%;
              top: 80%;
+
+             @media @mobile {
+                right: 5%;
+                top: 95%;
+                padding: 8% 18%;
+                font-size: 2.5rem;
+                letter-spacing: 7px;
+            }
              
          }
     }
@@ -200,6 +271,11 @@ header {
     align-items: center;
     width: 40%;
     margin: 80px auto;
+
+    @media @mobile {
+        width: 100%;
+        margin: 100px auto;
+    }
     
     
 }
