@@ -182,15 +182,42 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+.footer .newYork,
+.footer .florida,
+.footer .cali {
+  margin-top: 20px;
+}
 .footer .newYork p,
 .footer .florida p,
 .footer .cali p {
   line-height: 1.5;
 }
+@media (max-width: 500px) {
+  .footer .newYork p,
+  .footer .florida p,
+  .footer .cali p {
+    line-height: 2;
+  }
+}
 input[type=email] {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 40%;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  input[type=email] {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-size: 2rem;
+  }
 }
 #copyright {
   text-align: center;
@@ -200,8 +227,21 @@ input[type=email] {
 span {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  span {
+    font-size: 2.5rem;
+  }
+}
 .small {
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .small {
+    font-size: 1.5rem;
+  }
+}
+.share {
+  margin-top: 10px;
 }
 header {
   display: flex;
