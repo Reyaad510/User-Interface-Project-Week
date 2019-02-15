@@ -381,7 +381,7 @@ header .hamburger .menu-button {
 }
 @media (max-width: 500px) {
   .projects .villas h4 {
-    right: 5%;
+    right: 7%;
     top: 95%;
     padding: 8% 18%;
     font-size: 2.5rem;
@@ -417,7 +417,7 @@ header .hamburger .menu-button {
 }
 @media (max-width: 500px) {
   .projects .outskirts h4 {
-    left: 9%;
+    left: 10%;
     top: 95%;
     padding: 8% 18%;
     font-size: 2.5rem;
@@ -453,7 +453,7 @@ header .hamburger .menu-button {
 }
 @media (max-width: 500px) {
   .projects .blocks h4 {
-    right: 5%;
+    right: 7%;
     top: 95%;
     padding: 8% 18%;
     font-size: 2.5rem;
@@ -476,4 +476,33 @@ header .hamburger .menu-button {
 }
 .second {
   margin-top: 40px;
+}
+.container p {
+  margin-top: 30px;
+}
+.container .tab-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.container .tab-links .link {
+  padding: 15px 40px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.container .tab-cards {
+  margin: 50px 0px;
+}
+.container .tab-cards .card {
+  display: flex;
+  justify-content: space-between;
+}
+.container .tab-cards .card .card-main {
+  width: 57%;
+}
+.container .tab-cards .card h3 {
+  font-size: 2.8rem;
 }
