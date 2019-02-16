@@ -190,14 +190,77 @@ header h1 {
   color: #fff;
   margin-left: 40px;
 }
-header .hamburger {
-  margin-right: 40px;
-}
-header .hamburger .menu-button {
+header .dropdown {
   cursor: pointer;
 }
-nav {
+header .dropdown .hamburger {
+  margin-right: 40px;
+}
+header .dropdown .hamburger-content {
+  z-index: 15;
+  width: 100%;
+  background-color: lightslategray;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0%;
+  text-align: center;
+  top: 100%;
+  height: 100vh;
+}
+header .dropdown .hamburger-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 6rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  width: 100%;
+}
+header .dropdown .hamburger-content a:hover {
+  color: #222222;
+}
+header .dropdown .hamburger-hidden {
   display: none;
+}
+nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  background-color: lightslategray;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+nav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 6rem;
+}
+nav .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+nav .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 3.6rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+nav .overlay-content a:hover {
+  color: #222222;
 }
 .footer {
   background: #828282;

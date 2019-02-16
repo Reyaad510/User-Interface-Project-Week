@@ -3,6 +3,33 @@
 
 
 
+// Menu Overlay
+
+
+const menu = document.querySelector('.menu-button')
+menu.addEventListener('click', e => {
+    document.querySelector('nav').style.width = '100%';
+})
+
+const close = document.querySelector('.closebtn');
+close.addEventListener('click', e => {
+    document.querySelector('nav').style.width = '0%';
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
