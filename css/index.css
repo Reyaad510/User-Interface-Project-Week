@@ -493,11 +493,15 @@ header .hamburger .menu-button {
   border: 1px solid black;
   cursor: pointer;
 }
+.container .tab-links .active-tab {
+  color: white;
+  background-color: #5E9FB9;
+}
 .container .tab-cards {
   margin: 50px 0px;
 }
 .container .tab-cards .card {
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 .container .tab-cards .card .card-main {
@@ -505,4 +509,7 @@ header .hamburger .menu-button {
 }
 .container .tab-cards .card h3 {
   font-size: 2.8rem;
+}
+.container .tab-cards .active-card {
+  display: flex;
 }

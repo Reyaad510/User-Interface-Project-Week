@@ -17,7 +17,17 @@
             padding: 15px 40px;
             border: 1px solid black;
             cursor: pointer;
+
+            // &:hover {
+            //     background-color: #222222;
+            //     color: #fff;
+            // }
            
+        }
+
+        .active-tab {
+            color: white;
+            background-color: #5E9FB9; 
         }
         
     }
@@ -25,19 +35,28 @@
     .tab-cards {
         margin: 50px 0px;
 
-        .card {
-            display: flex;
+         .card {
+            display: none;
             justify-content: space-between;
+
+
            .card-main {
                width: 57%;
             
            }
 
+
            h3 {
                font-size: 2.8rem;
-           }
-
-           
+           }      
         }
+
+        .active-card {
+            display: flex;
+        }
+
+       
+
+       
     }
 }
