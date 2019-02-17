@@ -6,17 +6,25 @@
 // Menu Overlay
 
 
-const menu = document.querySelector('.menu-button')
-menu.addEventListener('click', e => {
-    document.querySelector('nav').style.width = '100%';
-})
 
+
+const menuButton = document.querySelector('.menu-button');
+const hamburgerContent = document.querySelector('.hamburger-content');
 const close = document.querySelector('.closebtn');
+
+
+
+menuButton.addEventListener('click', e => {
+    hamburgerContent.classList.toggle('hamburger-hidden');
+    menuButton.classList.toggle('menu-hidden');
+    close.classList.toggle('closebtn-hidden');
+});
+
 close.addEventListener('click', e => {
-    document.querySelector('nav').style.width = '0%';
+    hamburgerContent.classList.toggle('hamburger-hidden');
+    menuButton.classList.toggle('menu-hidden');
+    close.classList.toggle('closebtn-hidden');
 })
-
-
 
 
 

@@ -196,6 +196,15 @@ header .dropdown {
 header .dropdown .hamburger {
   margin-right: 40px;
 }
+header .dropdown .hamburger .menu-hidden {
+  display: none;
+}
+header .dropdown .hamburger .closebtn {
+  font-size: 5rem;
+}
+header .dropdown .hamburger .closebtn-hidden {
+  display: none;
+}
 header .dropdown .hamburger-content {
   z-index: 15;
   width: 100%;
