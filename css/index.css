@@ -202,6 +202,10 @@ header .dropdown .hamburger .menu-hidden {
 header .dropdown .hamburger .closebtn {
   font-size: 5rem;
 }
+header .dropdown .hamburger .closebtn a:hover {
+  color: #222222;
+  transition: ease-in-out 0.1s;
+}
 header .dropdown .hamburger .closebtn-hidden {
   display: none;
 }
