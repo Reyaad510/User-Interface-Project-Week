@@ -7,7 +7,6 @@
 
 
 
-
 const menuButton = document.querySelector('.menu-button');
 const hamburgerContent = document.querySelector('.hamburger-content');
 const close = document.querySelector('.closebtn');

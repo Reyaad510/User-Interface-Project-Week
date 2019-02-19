@@ -136,6 +136,7 @@ table {
 /* Your Code Goes Here */
 * {
   box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -158,11 +159,11 @@ h3 {
   font-weight: bold;
 }
 h4 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 p {
-  font-size: 1.8rem;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 li {
   font-size: 1.6rem;
@@ -280,6 +281,10 @@ nav .overlay-content a:hover {
   color: white;
   padding-top: 60px;
 }
+.footer h4 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
 .footer .container {
   display: flex;
   justify-content: space-between;
@@ -292,25 +297,18 @@ nav .overlay-content a:hover {
 .footer .newYork,
 .footer .florida,
 .footer .cali {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .footer .newYork p,
 .footer .florida p,
 .footer .cali p {
-  line-height: 1.5;
-}
-@media (max-width: 500px) {
-  .footer .newYork p,
-  .footer .florida p,
-  .footer .cali p {
-    line-height: 2;
-  }
+  font-size: 1.4rem;
+  line-height: 2.6rem;
 }
 input[type=email] {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 40%;
-  border-radius: 5px;
+  width: 90%;
+  padding: 13px 0px;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   input[type=email] {
@@ -319,6 +317,11 @@ input[type=email] {
     padding-bottom: 15px;
     padding-left: 10px;
     font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .small {
+    margin-top: 10px;
   }
 }
 #copyright {
@@ -334,17 +337,6 @@ span {
     font-size: 2.5rem;
   }
 }
-.small {
-  font-size: 1.2rem;
-}
-@media (max-width: 500px) {
-  .small {
-    font-size: 1.5rem;
-  }
-}
-.share {
-  margin-top: 10px;
-}
 .top {
   position: relative;
   margin-top: 50px;
@@ -354,17 +346,18 @@ span {
   display: block;
 }
 .top h2 {
-  font-size: 7rem;
+  font-size: 6.4rem;
   font-weight: bold;
   position: absolute;
   bottom: 10%;
   left: 10%;
   color: white;
-  line-height: 1.2;
+  line-height: 75px;
 }
 @media (max-width: 500px) {
   .top h2 {
     font-size: 4rem;
+    line-height: 1.2;
   }
 }
 .main {
@@ -562,10 +555,10 @@ span {
 .second {
   margin-top: 40px;
 }
-.container p {
+.service-p {
   margin-top: 30px;
 }
-.container .tab-links {
+.tab-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -573,28 +566,48 @@ span {
   font-weight: bold;
   margin-top: 50px;
 }
-.container .tab-links .link {
+.tab-links .link {
   padding: 15px 40px;
   border: 1px solid black;
   cursor: pointer;
 }
-.container .tab-links .active-tab {
+.tab-links .active-tab {
   color: white;
   background-color: #5E9FB9;
 }
-.container .tab-cards {
+.tab-cards {
   margin: 50px 0px;
 }
-.container .tab-cards .card {
+.tab-cards .card {
   display: none;
   justify-content: space-between;
 }
-.container .tab-cards .card .card-main {
+.tab-cards .card .card-main {
   width: 57%;
 }
-.container .tab-cards .card h3 {
+.tab-cards .card h3 {
   font-size: 2.8rem;
 }
-.container .tab-cards .active-card {
+.tab-cards .active-card {
   display: flex;
+}
+.tw {
+  display: flex;
+}
+.tw h3 {
+  font-size: 2.8rem;
+}
+.tw .touch {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.tw .where {
+  flex: 1;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
