@@ -585,6 +585,9 @@ span {
 .tab-cards .card .card-main {
   width: 57%;
 }
+.tab-cards .card .card-main p {
+  margin-top: 30px;
+}
 .tab-cards .card h3 {
   font-size: 2.8rem;
 }
