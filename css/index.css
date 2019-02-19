@@ -401,11 +401,16 @@ span {
   border: 1px solid black;
   font-size: 1.4rem;
   border-radius: 3px;
-  height: 30px;
+  height: 40px;
   margin-top: 20px;
   background: white;
   cursor: pointer;
   width: 40%;
+}
+.main .middle .midText .learn:hover {
+  background-color: lightslategray;
+  color: white;
+  transition: ease-in-out 0.1s;
 }
 @media (max-width: 500px) {
   .main .middle .midText .learn {
@@ -450,6 +455,7 @@ span {
 @media (max-width: 500px) {
   .projects .villas .imgMobile {
     display: block;
+    width: 100%;
   }
 }
 .projects .villas h4 {
@@ -461,11 +467,9 @@ span {
 }
 @media (max-width: 500px) {
   .projects .villas h4 {
-    right: 7%;
-    top: 95%;
-    padding: 8% 18%;
-    font-size: 2.5rem;
-    letter-spacing: 7px;
+    right: 10%;
+    top: 90%;
+    padding: 8% 24%;
   }
 }
 .projects .outskirts {
@@ -486,6 +490,7 @@ span {
 @media (max-width: 500px) {
   .projects .outskirts .imgMobile {
     display: block;
+    width: 100%;
   }
 }
 .projects .outskirts h4 {
@@ -498,10 +503,8 @@ span {
 @media (max-width: 500px) {
   .projects .outskirts h4 {
     left: 10%;
-    top: 95%;
-    padding: 8% 18%;
-    font-size: 2.5rem;
-    letter-spacing: 7px;
+    top: 90%;
+    padding: 8% 26%;
   }
 }
 .projects .blocks {
@@ -522,6 +525,7 @@ span {
 @media (max-width: 500px) {
   .projects .blocks .imgMobile {
     display: block;
+    width: 100%;
   }
 }
 .projects .blocks h4 {
@@ -533,11 +537,9 @@ span {
 }
 @media (max-width: 500px) {
   .projects .blocks h4 {
-    right: 7%;
-    top: 95%;
-    padding: 8% 18%;
-    font-size: 2.5rem;
-    letter-spacing: 7px;
+    right: 10%;
+    padding: 8% 24%;
+    top: 90%;
   }
 }
 .content {
