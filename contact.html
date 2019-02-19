@@ -45,10 +45,13 @@
 		<div class="touch">
 			<h3>Get In Touch</h3>
 			<form action="#">
-				<label for="email">Email address</label>
-				<input type="email" name='email' placeholder='Enter email'>
-				<p class='small share'>We'll never share your email with anyone else.</p>
+				<div class="address">
+				<label for="email" name="email" class="add">Email address</label>
+				<input type="email" name='email' placeholder='Enter email' class="emails">
+				<p>We'll never share your email with anyone else.</p>
+				</div>
 
+				<div class="buildings">
 				<label for="buildings">How many buildings do you need planned?</label>
 				<select name="buildings">
 					<option value="1">1</option>
@@ -57,10 +60,14 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
+				</div>
 
-				<label for="overview">Provide a brief overview of your projects needs:</label>
-				<textarea name="overview" cols="30" rows="10"></textarea>
+				<div class="overview">
+				<label for="overview">Provide a brief overview of your projects needs:</label> <br>
+				<textarea name="overview"></textarea>
+				</div>
 
+				<div class="rows">
 				<div class="row">
 					<input type="radio" name="owner">
 					<label for="">I am a small business</label>
@@ -73,8 +80,9 @@
 					<input type="radio" name="owner">
 					<label for="">I am a corporation</label>
 				</div>
+				</div>
 
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" class="submit">
 			</form>
 
 		</div> 
@@ -84,24 +92,24 @@
 		<div class="where">
 			<h3>Where We Work</h3>
 
-		<div class="newYork1">
-				<p><span>New York</span></p>
+		<div class="work">
+				<p class="big"><span>New York</span></p>
 				<p>123 Lane<br>
 					Suite 100<br>
 					Albany, NY 12345<br>
 					202 555 0144</p>
 			</div>
 
-			<div class="florida1">
-				<p><span>Florida</span></p>
+			<div class="work">
+				<p class="big"><span>Florida</span></p>
 				<p>Ocean Drive<br>
 					Suite 201<br>
 					Orlando, FL 22345<br>
 					502 555 0144</p>
 			</div>
 
-			<div class="cali1">
-				<p><span>California</span></p>
+			<div class="work">
+				<p class="big"><span>California</span></p>
 				<p>Mountain Street<br>
 					Suite 105<br>
 					San Diego, CA 22345<br>
@@ -129,7 +137,7 @@
 				<h4><span>Interested in starting a project?</span></h4>
 				<h4><span>Let’s talk:</span></h4><br>
 				<input type="email" name='email' placeholder='Enter email'>
-				<p class='small share'>We'll never share your email with anyone else.</p>
+				<p class='small'>We'll never share your email with anyone else.</p>
 			</div>
 
 			<div class="newYork">
