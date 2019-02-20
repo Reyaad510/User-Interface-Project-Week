@@ -1,4 +1,27 @@
 
+
+
+
+
+   .top {
+
+
+       .imgDesktop {
+
+        @media @mobile {
+            display:none;
+        }
+       }
+       .imgMobile {
+           display: none;
+
+           @media @mobile {
+               display: block;
+               width: 100%;
+           }
+
+       }
+   }
    .service-p {
        margin-top: 30px;
    }
@@ -11,10 +34,21 @@
         font-weight: bold;
         margin-top: 50px;
 
+        @media @mobile {
+            flex-direction: column;
+            
+        }
+
         .link {
             padding: 15px 40px;
             border: 1px solid black;
             cursor: pointer;
+
+            @media @mobile {
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+            }
 
             // &:hover {
             //     background-color: #222222;
@@ -40,6 +74,11 @@
 
            .card-main {
                width: 57%;
+
+               @media @mobile {
+                   width: 100%;
+                   margin-bottom: 25px;
+               }
                
                p {
                    margin-top: 30px;
@@ -55,6 +94,11 @@
 
         .active-card {
             display: flex;
+            
+            @media @mobile {
+                flex-direction: column;
+            }
+            
         }
 
        

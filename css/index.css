@@ -559,6 +559,20 @@ span {
 .second {
   margin-top: 40px;
 }
+@media (max-width: 500px) {
+  .top .imgDesktop {
+    display: none;
+  }
+}
+.top .imgMobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .top .imgMobile {
+    display: block;
+    width: 100%;
+  }
+}
 .service-p {
   margin-top: 30px;
 }
@@ -570,10 +584,22 @@ span {
   font-weight: bold;
   margin-top: 50px;
 }
+@media (max-width: 500px) {
+  .tab-links {
+    flex-direction: column;
+  }
+}
 .tab-links .link {
   padding: 15px 40px;
   border: 1px solid black;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .tab-links .link {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 .tab-links .active-tab {
   color: white;
@@ -589,6 +615,12 @@ span {
 .tab-cards .card .card-main {
   width: 57%;
 }
+@media (max-width: 500px) {
+  .tab-cards .card .card-main {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
 .tab-cards .card .card-main p {
   margin-top: 30px;
 }
@@ -597,6 +629,11 @@ span {
 }
 .tab-cards .active-card {
   display: flex;
+}
+@media (max-width: 500px) {
+  .tab-cards .active-card {
+    flex-direction: column;
+  }
 }
 .tw {
   display: flex;
