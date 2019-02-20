@@ -1,8 +1,31 @@
 
 
+
+.top {
+    .imgDesktop {
+
+        @media @mobile {
+            display:none;
+        }
+       }
+       .imgMobile {
+           display: none;
+
+           @media @mobile {
+               display: block;
+               width: 100%;
+           }
+
+       }
+}
+
 .tw {
     display: flex;
     margin: 60px 0px;
+
+    @media @mobile {
+        flex-direction: column;
+    }
     
     h3 {
         font-size: 2.8rem;
@@ -25,6 +48,12 @@
 
            .address {
 
+            .add {
+                @media @mobile {
+                    font-size: 2.0rem;
+                }
+            }
+
             .emails {
                 margin-top: 10px;
             }
@@ -33,11 +62,21 @@
                  font-size: 1.2rem;
                  color: lightslategray;
                  margin-bottom: 40px;
+
+                 @media @mobile {
+                     font-size: 1.6rem;
+                 }
              }
            }
 
            .buildings {
                margin-bottom: 40px;
+
+               .add {
+                   @media @mobile {
+                       font-size: 2.0rem;
+                   }
+               }
                select {
                    width: 90%;
                    height: 40px;
@@ -50,6 +89,14 @@
            }
 
            .overview {
+
+                .add {
+                    
+                    @media @mobile {
+                        font-size: 1.8rem;
+                    }
+                }
+
                textarea {
                    width: 90%;
                    height: 150px;
@@ -74,6 +121,12 @@
             padding: 10px 0;
             font-size: 1.6rem;
 
+            @media @mobile {
+                margin-top: 20px;
+                width: 100%;
+                padding: 15px 0;
+            }
+
             &:hover {
                 background-color: lightslategray;
                 color: white;
@@ -88,6 +141,10 @@
         display: flex;
         flex-direction: column;
         align-items: baseline;
+
+        @media @mobile {
+            margin-top: 60px; 
+        }
         
         
        h3 {
@@ -98,8 +155,15 @@
            margin-bottom: 40px;
            line-height: 100px;
 
+           p {
+               @media @mobile {
+                   font-size: 1.8rem;
+               }
+           }
+
            .big {
                font-size: 1.8rem;
+
            }
        }
 
