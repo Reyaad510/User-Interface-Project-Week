@@ -73,15 +73,20 @@ class TabCard {
         document.querySelectorAll('.card').forEach(card => card.classList.remove('active-card'));
 
        this.card.classList.add('active-card');
+         TweenMax.from(".card", 0.5, {opacity:0, scale:0, ease:AudioBufferSourceNode.easeOUt});
+
+       
+       
     }
 }
 
 
 
-
-
-
-
-
 const tabs = document.querySelectorAll('.tab-links .link').forEach(tab => new TabLink(tab));
 
+
+
+// GSAP
+
+//  TweenMax.from(".card", 3, {opacity:0, scale:0, ease:AudioBufferSourceNode.easeOUt});
+// TweenMax.from(".midImg", 0.5, {opacity:0, scale:0, ease:AudioBufferSourceNode.easeOUt, delay: 0.5});
