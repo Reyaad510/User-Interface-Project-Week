@@ -601,6 +601,11 @@ span {
     margin-top: 15px;
   }
 }
+.tab-links .link:hover {
+  background-color: #222222;
+  color: #fff;
+  transition: ease-in-out 200ms;
+}
 .tab-links .active-tab {
   color: white;
   background-color: #5E9FB9;
