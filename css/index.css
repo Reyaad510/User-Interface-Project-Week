@@ -220,7 +220,7 @@ header .dropdown .hamburger-content {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 0%;
+  left: -100%;
   text-align: center;
   top: 100%;
   height: 100vh;
@@ -239,42 +239,6 @@ header .dropdown .hamburger-content a:hover {
 }
 header .dropdown .hamburger-hidden {
   display: none;
-}
-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 50;
-  left: 0;
-  top: 0;
-  background-color: lightslategray;
-  opacity: 0.9;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-nav .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 6rem;
-}
-nav .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-nav .overlay-content a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 3.6rem;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-nav .overlay-content a:hover {
-  color: #222222;
 }
 .footer {
   background: #828282;
@@ -686,6 +650,7 @@ span {
 }
 .tw .touch form .address .emails {
   margin-top: 10px;
+  width: 90%;
 }
 .tw .touch form .address p {
   font-size: 1.2rem;
@@ -721,6 +686,7 @@ span {
   width: 90%;
   height: 150px;
   margin-top: 10px;
+  font-size: 1.6rem;
 }
 .tw .touch form .rows {
   margin-top: 20px;

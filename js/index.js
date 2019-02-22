@@ -9,20 +9,25 @@
 const menuButton = document.querySelector('.menu-button');
 const hamburgerContent = document.querySelector('.hamburger-content');
 const close = document.querySelector('.closebtn');
-
+let tween = TweenMax.to(".hamburger-content", 0.3, {xPercent:100, ease:Linear.easeInOut, paused:true});
 
 
 menuButton.addEventListener('click', e => {
-    hamburgerContent.classList.toggle('hamburger-hidden');
+   
     menuButton.classList.toggle('menu-hidden');
     close.classList.toggle('closebtn-hidden');
+    tween.play();
 });
 
 close.addEventListener('click', e => {
-    hamburgerContent.classList.toggle('hamburger-hidden');
+   
     menuButton.classList.toggle('menu-hidden');
     close.classList.toggle('closebtn-hidden');
+    tween.reverse();
+    
 })
+
+
 
 
 
