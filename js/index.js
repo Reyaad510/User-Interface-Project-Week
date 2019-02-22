@@ -1,10 +1,9 @@
-// JS goes here
+
 
 
 
 
 // Menu Overlay
-
 
 
 const menuButton = document.querySelector('.menu-button');
@@ -24,16 +23,6 @@ close.addEventListener('click', e => {
     menuButton.classList.toggle('menu-hidden');
     close.classList.toggle('closebtn-hidden');
 })
-
-
-
-
-
-
-
-
-
-
 
 
 
