@@ -21,6 +21,8 @@ class Dropdown {
         })
     }
 
+    // When user clicks on hamburger
+
     open() {
 
         this.menuButton.classList.toggle('menu-hidden');
@@ -28,6 +30,8 @@ class Dropdown {
         this.tween.play();
     }
 
+    // When user clicks on close button
+    
     close() {
 
         this.menuButton.classList.toggle('menu-hidden');

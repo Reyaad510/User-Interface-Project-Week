@@ -21,6 +21,8 @@ class TabLink {
     }
 }
 
+// Class TabCard
+
 class TabCard {
     constructor(card) {
         this.card = card;
