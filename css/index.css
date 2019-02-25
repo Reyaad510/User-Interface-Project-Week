@@ -353,6 +353,8 @@ span {
 @media (max-width: 500px) {
   .main .middle .midText h3 {
     font-size: 3.4rem;
+    text-align: center;
+    width: 100%;
   }
 }
 .main .middle .midText p {
@@ -399,6 +401,11 @@ span {
 }
 .projects h3 {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .projects h3 {
+    text-align: center;
+  }
 }
 .projects .villas {
   position: relative;
