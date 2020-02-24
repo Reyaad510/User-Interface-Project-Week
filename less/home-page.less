@@ -1,0 +1,283 @@
+
+
+
+// Home Page Content
+
+.top {
+    position: relative;
+    margin-top: 50px;
+
+  img {
+      width: 100%;
+      display: block;
+  }
+
+  h2 {
+      font-size: 6.4rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10%;
+      left: 10%; 
+      color: white;   
+      line-height: 75px; 
+      
+      @media @mobile {
+          font-size: 4.0rem;
+          line-height: 1.2;
+      }
+      
+      }
+
+     
+  }
+
+
+
+// Main Content
+
+.main {
+    margin-top: 50px;
+   
+    .middle {
+        display: flex;
+        
+        @media @mobile {
+            flex-direction: column-reverse;
+          
+        }
+        
+        
+
+        .midText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            margin-left: 5%;
+
+            @media @mobile {
+                margin-top: 30px;
+                align-items: flex-start;
+            }
+            
+                h3 {
+                    @media @mobile {
+                        font-size: 3.4rem;
+                        text-align: center;
+                        width: 100%;
+                        
+                    }
+                }
+                p {
+                    margin-top: 20px;
+                    
+                }
+                .learn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                    font-size: 1.4rem;
+                    border-radius: 3px;
+                    height: 40px;
+                    margin-top: 20px;
+                    background: white;
+                    cursor: pointer;
+                    width: 40%;
+
+                    &:hover {
+                        background-color: lightslategray;
+                        color: white;
+                        transition: ease-in-out 0.1s;
+                    }
+
+                    @media @mobile {
+                        width: 100%;
+                        padding: 30px;
+                        font-size: 1.8rem;
+                        
+                        
+                    }
+                }
+              
+        }
+        .midImg {
+            flex: 1;
+            
+            
+        }
+    }
+    .middle2 {
+         margin-top: 100px;
+
+         @media @mobile {
+             flex-direction: column;
+         }
+    }
+}
+
+
+
+
+// Projects Section
+
+
+.projects {
+
+    margin-top: 80px;
+
+    h3 {
+        font-size: 3.0rem;
+
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    
+    .villas {
+       position: relative;
+       padding-top: 40px;
+
+       .imgDesktop {
+           width: 100%;
+           display: block;
+           
+           @media @mobile {
+               display: none;
+           }
+       }
+
+       .imgMobile {
+        display: none;
+        
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+     }
+
+       
+        h4 {
+            position: absolute;
+            background: #D8D8D8;
+            padding: 3% 10%;
+            right: 0.1%;
+            top: 80%;
+
+            @media @mobile {
+                right: 10%;
+                top: 90%;
+                padding: 8% 24%;
+                
+
+            }
+            
+        }
+    }
+    .outskirts {
+        position: relative;
+
+        .imgDesktop {
+            width: 100%;
+            display: block;
+
+            @media @mobile {
+                display: none;
+            }
+            
+        }
+
+        .imgMobile {
+            display: none;
+            
+            @media @mobile {
+                display: block;
+                width: 100%
+            }
+         }
+
+         
+ 
+         h4 {
+             position: absolute;
+             background: #D8D8D8;
+             padding: 3% 10%;
+             left: 0.01%;
+             top: 80%;
+
+             @media @mobile {
+                left: 10%;
+                top: 90%;
+                padding: 8% 26%;
+            }
+             
+         }
+    }
+
+    .blocks {
+        position: relative;
+
+        .imgDesktop {
+            width: 100%;
+            display: block;
+
+            @media @mobile {
+                display: none;
+            }
+        }
+
+        .imgMobile {
+            display: none;
+
+            @media @mobile {
+                display: block;
+                width: 100%;
+            }
+        }
+
+ 
+         h4 {
+             position: absolute;
+             background: #D8D8D8;
+             padding: 3% 10%;
+             right: 0.1%;
+             top: 80%;
+
+             @media @mobile {
+                // right: 7%;
+                // top: 95%;
+                // padding: 8% 18%;
+                // font-size: 2.5rem;
+                // letter-spacing: 7px;
+                right: 10%;
+                padding: 8% 24%;
+                top: 90%;
+            }
+             
+         }
+    }
+  
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 80px auto;
+
+    @media @mobile {
+        width: 100%;
+        margin: 100px auto;
+    }
+    
+    
+}
+
+.second {
+    margin-top: 40px;
+}
+
+
+
+

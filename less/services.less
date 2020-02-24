@@ -1,0 +1,108 @@
+
+
+
+
+
+   .top {
+
+
+       .imgDesktop {
+
+        @media @mobile {
+            display:none;
+        }
+       }
+       .imgMobile {
+           display: none;
+
+           @media @mobile {
+               display: block;
+               width: 100%;
+           }
+
+       }
+   }
+   .service-p {
+       margin-top: 30px;
+   }
+
+    .tab-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.0rem;
+        font-weight: bold;
+        margin-top: 50px;
+
+        @media @mobile {
+            flex-direction: column;
+            
+        }
+
+        .link {
+            padding: 15px 40px;
+            border: 1px solid black;
+            cursor: pointer;
+
+            @media @mobile {
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            &:hover {
+                background-color: #222222;
+                color: #fff;
+                transition: ease-in-out 200ms;
+            }
+           
+        }
+
+        .active-tab {
+            color: white;
+            background-color: #5E9FB9; 
+        }
+        
+    }
+
+    .tab-cards {
+        margin: 50px 0px;
+
+         .card {
+            display: none;
+            justify-content: space-between;
+
+
+           .card-main {
+               width: 57%;
+
+               @media @mobile {
+                   width: 100%;
+                   margin-bottom: 25px;
+               }
+               
+               p {
+                   margin-top: 30px;
+               }
+            
+           }
+
+
+           h3 {
+               font-size: 2.8rem;
+           }      
+        }
+
+        .active-card {
+            display: flex;
+            
+            @media @mobile {
+                flex-direction: column;
+            }
+            
+        }
+
+       
+
+       
+    }
